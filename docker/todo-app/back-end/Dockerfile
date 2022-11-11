@@ -1,5 +1,5 @@
 FROM node:14
-WORKDIR /beckend/
+WORKDIR /backend/
 EXPOSE 3001
 ADD node_modules.tar.gz .
 COPY . .
