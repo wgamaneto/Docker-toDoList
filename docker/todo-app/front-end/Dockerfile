@@ -1,6 +1,8 @@
 FROM node:14-alpine
-WORKDIR /todo-app/front-end/
+WORKDIR /todolist
 EXPOSE 3000
 ADD node_modules.tar.gz .
-COPY . .
+COPY src/ ./src
+COPY public/ ./public
+COPY .env .
 CMD ["npm", "start"]
