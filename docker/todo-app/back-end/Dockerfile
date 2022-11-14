@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:14
 WORKDIR /todolist
 EXPOSE 3001
 ADD node_modules.tar.gz .
