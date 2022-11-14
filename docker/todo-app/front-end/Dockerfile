@@ -1,10 +1,6 @@
-FROM node:14
-WORKDIR /todolist
+FROM node:14-alpine
+WORKDIR /todo-app/frontend
 EXPOSE 3000
 ADD node_modules.tar.gz .
-COPY package.json .
-COPY package-lock.json .
-COPY src/ ./src
-COPY public/ ./public
-COPY .env .
+COPY . . 
 CMD ["npm", "start"]
